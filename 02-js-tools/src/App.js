@@ -1,3 +1,7 @@
+import React from "react";
+import ReactDOM from "react-dom";
+import Pet from "./Pet";
+
 // Write JavaScript here
 // This below is the most basic way to write React and rendering it to the DOM
 // The Pet is an example of a component
@@ -5,13 +9,6 @@
 
 // Props in React means Properties such as class, ids, dataset e.t.c
 
-const Pet = (props) => {
-  return React.createElement("div", {}, [
-    React.createElement("h1", {}, props.name),
-    React.createElement("h2", {}, props.animal),
-    React.createElement("h2", {}, props.breed),
-  ]);
-};
 const App = () => {
   return React.createElement(
     "div",
